@@ -24,5 +24,5 @@ console.log(booleanIsLoggesdIn) // true.
 
 let strNumber=33
 let stringNumber = String(strNumber)
-console.log(stringNumber);
-console.log(typeof(stringNumber))
+console.log(stringNumber);//33
+console.log(typeof(stringNumber));//String
