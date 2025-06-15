@@ -14,4 +14,4 @@ accountPassword="12345"
 accountCity="delhi"
 console.log(accountId);
 console.table([accountId, accountEmail, accountPassword, accountCity])
-console.log(accountState)
+console.log(accountState)//undefined

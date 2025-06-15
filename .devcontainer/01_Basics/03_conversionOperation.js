@@ -23,7 +23,7 @@ console.log(booleanIsLoggesdIn) // true.
 //"Debu"=> true
 
 let strNumber=33
-let stringNumber = String(strNumber)
+let stringNumber = String(strNumber);
 console.log(stringNumber);
 console.log(typeof(stringNumber))
 
@@ -62,4 +62,7 @@ console.log(gameCounter);
 //https://chatgpt.com/share/684e4fe6-a2ec-8013-a1c1-5de4c0680e44
 
 //mdn link for prefix and postfix:-   
-//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment 
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Incre
+console.log(stringNumber);//33
+console.log(typeof(stringNumber));//String
+
