@@ -56,9 +56,9 @@ let gameCounter=100;
 // gameCounter++;//101
 ++gameCounter;//101
 console.log(gameCounter);
-
+//
 // chatgpt link for TypeConversion: 
 //https://chatgpt.com/share/684e4fe6-a2ec-8013-a1c1-5de4c0680e44
 
 //mdn link for prefix and postfix:-   
-//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment 
