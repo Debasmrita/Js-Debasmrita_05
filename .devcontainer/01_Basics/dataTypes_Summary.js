@@ -42,3 +42,30 @@ const myFunction=function(){
 }
 
 console.log(typeof myFunction);// function
+
+
+
+
+//***************************************************************************
+
+//Stack(primitive), Heap(non-primitive).
+
+let myYoutubeName= "Debasmrita's League"
+let anotherName= myYoutubeName;
+anotherName= "chai aur code";
+console.log(anotherName);// chai aur code
+console.log(myYoutubeName);// Debasmrita"s League
+
+let userOne ={
+    email: "user@gmail.com",
+    upiId: "user@ybl"
+}
+
+let userTwo= userOne;
+
+userTwo.email = "debu@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// stack=== we get a copy ; in heap we get a refernece which means cahnges are done in the original value.
