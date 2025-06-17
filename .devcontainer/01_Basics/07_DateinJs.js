@@ -43,3 +43,8 @@ console.log(newDate.getDay());
 newDate.toLocaleString('default',{
     weekday: "long",
 })
+
+
+// to get current year.
+let date4 = new Date();
+console.log(date4.getFullYear());//2025
