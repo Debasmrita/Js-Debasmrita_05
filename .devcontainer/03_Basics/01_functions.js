@@ -13,8 +13,8 @@ sayMyName()//-->execution.
 function Add (num1, num2) {
    console.log( num1 + num2);
 }
-const results = Add(7,9);
-console.log(results);//undefined.
+//const results= Add(7,9);
+//console.log(results);//undefined.
 
 function Add (num1, num2) {
    // let results=num1 + num2;
