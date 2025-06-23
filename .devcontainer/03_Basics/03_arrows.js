@@ -12,19 +12,19 @@ const user={
 console.log(this);//{}
 
 
-// function chaa(){
-//     let username= "debu"
-//     console.log(this.username)
-// }
-// chaa(); //we cannot use this in function.
+function chaa(){
+    let username= "debu"
+    console.log(this.username)
+}
+chaa(); //we cannot use this in function.
 
 
-// const chai =  ()=>{
-//     let username= "debu"
-//     console.log(this.username);
+const chai =  ()=>{
+    let username= "debu"
+    console.log(this.username);
     
-// }
-// chai()
+}
+chai()
 
 // Arrow Function
 const addtwo= (num1, num2) => {
@@ -37,6 +37,6 @@ console.log(addtwo(2,3));
 const addthree = (num3,num4) => (num3+num4)
 console.log(addthree(4,5));
 
-
+//Arrow --- objects
 const addfour = (num3,num4) => ({username: "Debu"})
 console.log(addfour());
