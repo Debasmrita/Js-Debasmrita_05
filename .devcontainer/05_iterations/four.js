@@ -8,3 +8,9 @@ const myObj={
 for (const key in myObj) {
     console.log(`${key}:${myObj[key]}`)
     }
+
+const programming=["python","java","c++"]
+for (const key in programming) {
+    console.log();
+    
+}    
