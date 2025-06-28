@@ -10,30 +10,30 @@
 //     console.log(arr)
 // }
 
-const greetings= "hello World!"
-for (const greet of greetings) {
-    if(greet == " "){
-        console.log("space detected");
-        continue;
-    }
-    console.log(greet)
-}
+// const greetings= "hello World!"
+// for (const greet of greetings) {
+//     if(greet == " "){
+//         console.log("space detected");
+//         continue;
+//     }
+//     console.log(greet)
+// }
 
 
 
 //Maps
 
-const map = new Map()
-map.set('IN',"India");
-map.set('USA',"United States of America")
-map.set('Fr',"France")
+// const map = new Map()
+// map.set('IN',"India");
+// map.set('USA',"United States of America");
+// map.set('Fr',"France");
 
-console.log(map)
+// console.log(map)
 
-for (const [key, value] of map) {
-    console.log(`${key}:${value}`);
+// for (const [key, value] of map) {
+//     console.log(`${key}:${value}`);
     
-}
+// }
 
 
 const myObj={

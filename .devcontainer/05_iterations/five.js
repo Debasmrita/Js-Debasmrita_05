@@ -1,4 +1,4 @@
-const arr=["js","ruby","java","python","cpp"]
+const arr=["js","ruby","java","python","cpp"];
 
 // arr.forEach(function (val){
 //     console.log(val);
@@ -36,7 +36,7 @@ myCoding = [
     }
 ]
 
-myCoding.forEach((item)=> {
-    console.log(item.languageName);
+myCoding.forEach((item,index)=> {
+    console.log(item.languageName, index);
     
 });
