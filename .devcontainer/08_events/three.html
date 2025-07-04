@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEbu</title>
+</head>
+<body>
+    <h1>Debu and JS</h1>
+
+    <button id="start" style="width:200px; border-radius: 120px;">START</button>
+
+    <button id="stop" style="width: 200px; border-radius: 120px; margin-top: 20px;">STOP</button>
+</body>
+<script>
+
+    // const ChangeH= function(){
+    //     console.log("Chai and Js")
+    // }
+    // setTimeout(ChangeH,2000)
+
+    
+    // to-do: Functionality of Both Start and Stop Button for setTimeout and clearTimeout
+    
+    // const changeTxt=function(){ 
+    //     document.querySelector('h1').innerHTML= "Debu-Didi and Js"
+    // }
+    
+    // let TimeOutId;
+    
+    // const startbtn= document.querySelector('#start').addEventListener('click', function(){       
+    // const TimeOutId= setTimeout(changeTxt,2000)
+    // })
+    
+    // const stopbtn= document.querySelector('#stop').addEventListener('click', function(){
+    //     clearTimeout(TimeOutId)
+    //     console.log("Stopped")
+    // })
+
+
+
+
+
+    // to-do: Working of start and stop for setInterval
+    const date= function(str){
+        console.log(str, Date.now())
+     }
+     let intervalId;
+
+
+    const startbtn= document.querySelector('#start').addEventListener('click', function(){
+      intervalId  = setInterval(date,1000, "hi");
+    })
+    
+    const stopbtn= document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId)
+        console.log("Execution Stopped")
+
+    })
+
+
+
+    
+
+
+    
+</script>
+</html>
