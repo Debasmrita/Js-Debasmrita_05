@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .all{
+        width: 400px;
+        height: 380px;
+        border:2px solid black;
+        padding: 20px;
+    }
+
+    .text{
+        text-align: left;
+              
+        right:20px;
+    }
+     .btn{
+        text-align: right;
+                
+        right:20px;
+    }
+    
+
+</style>
+</head>
+<body style="background-color: grey; color: azure;">
+    Value	State	Description
+0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.
+<div class="all">
+   <div class="card">
+    <img src="https://avatars.githubusercontent.com/u/146209834?v=4", style="height: 200px; width: 200px;"></div>
+
+    <div id="text">
+        <h2>Debasmrita</h2>
+        <p>IT</p>
+        <p>Followers: <span id="followers-count"></span></p>
+        <p >Following: <span id="following-count"></span> </p>
+    </div>
+    <div class="btn">
+    <button id="button">CLICK</button>
+</div>
+</div>
+
+
+
+</body>
+
+<script>
+    const requestURL= 'https://api.github.com/users/Debasmrita'
+   const xhr= new  XMLHttpRequest()
+   xhr.open('GET', requestURL)
+   xhr.onreadystatechange = function(){
+    console.log(xhr.readyState)
+    if (xhr.readyState === 4) {
+        const data= JSON.parse(this.responseText)
+        //console.log(data.following)// undefined as, most of the cases data comes in typeof String
+    console.log(data)    
+    console.log(typeof data)
+    //sconsole.log(data.following)
+    document.getElementById("following-count").textContent=data.following;
+    
+    document.getElementById("followers-count").textContent=data.followers;
+
+   const b= document.querySelector('.btn')
+   b.addEventListener('click', function (e){
+    console.log(e)
+    document.getElementsById("text").scrollIntoView({
+      behavior: "smooth" // Optional: makes the scroll smooth
+    });
+
+   });
+    }
+   }
+   console.log(xhr.readyState)
+   xhr.send()
+
+   
+</script>
+</html>
